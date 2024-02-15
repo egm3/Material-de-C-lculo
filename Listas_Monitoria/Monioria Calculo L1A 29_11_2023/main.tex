@@ -1,0 +1,112 @@
+% Todas as linhas precedidas pelo simbolo '%' são comentários
+% e não afetam em nada o seu texto final.
+
+% IGNORE. Pacotes necessários e acessórios para o documento
+\documentclass[12pt]{exam}
+\usepackage{amsthm}
+\usepackage{libertine}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{multicol}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+% ---
+
+% Informações que podem ser configuradas
+% ---
+\newcommand{\class}{Matemática básica} % Nome da disciplina
+\newcommand{\term}{2023}              % Perído Letivo
+\newcommand{\examnum}{Monitoria de cálculo L1A}      % Número/Nome do exercício.
+\newcommand{\examdate}{29/11/2023}        % insere a data no documento
+\newcommand{\timelimit}{}               % IGNORE
+\newcommand{\euler}{e}
+% ---
+
+
+
+\begin{document} % declaração de que o documento começa aqui.
+\pagestyle{plain}
+\thispagestyle{empty}
+% ... formatação do cabeçalho
+\noindent
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} l}
+ \textbf{\class} & \textbf{Monitores:} & \textit{Eduardo Guimarães}\\             % Insira o seu nome dentro dos {}'.
+\textbf{\term} &&\\
+\textbf{\examnum} &&\\
+\textbf{\examdate} &&\\
+\end{tabular*}\\
+\rule[2ex]{\textwidth}{2pt}
+% ---
+
+
+\section{Limites}
+
+
+\begin{questions}
+\question Cálcule os seguintes limites
+    \begin{multicols}{2}
+        \begin{enumerate}[(a)]
+            \item 
+            $\displaystyle \lim_{x\to -1} \sqrt[3]{\frac{x^4 - 1}{x + 1}} $
+            \item 
+            $\displaystyle \lim_{t\to 0} \frac{\sqrt{1 + t} - \sqrt{1 - t}}{t} $
+            \item 
+            $\displaystyle \lim_{x\to -\infty} \frac{x^4 + 2x^2}{x^2 + 1} $
+            \item 
+            $\displaystyle \lim_{x\to 0} x^4 \cos{\left( \frac{2}{x} \right) } = 0 $
+            \item 
+            $\displaystyle \lim_{x\to 0^+} \sqrt{x} \cdot \euler^{\sin{\left( \frac{\pi}{x} \right) }  } = 0 $
+             \item 
+            $\displaystyle \lim_{x\to \frac{\pi}{4}} \frac{\tan{\left(x\right)} - 1}{x - \frac{\pi}{4}} $
+        \end{enumerate}
+    \end{multicols}
+    
+\question Encontre L tal que a função abaixo seja contínua em x = -1
+
+\begin{equation}
+    f(x) = \begin{cases}
+        L + e^{x+1}\cos{(x+1)} & \text{se    }  x \geq -1 \\
+        3^{x^3 + 3x + 2} & \text{se    } x < -1 \\
+
+
+
+    \end{cases}
+\end{equation}
+
+\section{Derivadas}
+
+
+
+\question Calcule, \textbf{usando a definição}, a derivada de
+    $\displaystyle f(x) = \frac{1 - 2x}{3 + x} $
+
+\question Encontre a equação da reta tangente a curva no ponto dado
+
+    \begin{multicols}{2}
+        \begin{enumerate}[(a)]
+            \item 
+            $\displaystyle f(x) = x \ln{x}, \text{em } P = \left( 1, 0\right)$
+            \item 
+            $\displaystyle f(x) = \frac{3}{\sqrt{x}}, \text{em } P = \left( 1, 3\right)$
+            \item 
+            $\displaystyle y = x^3 + 2x + 5, \text{em } x = 1$
+        \end{enumerate}
+    \end{multicols}
+    
+
+\question Usando as regras de derivação cálcule a derivada das seguintes funções
+
+
+\begin{enumerate}[(a)]
+    \begin{multicols}{2}
+                \item $\displaystyle f(x) = \left( 2x^4 + 5x^2 + 1\right)\left( e^x+ 1\right) $
+                \item $\displaystyle y = \left( e^x - x\right) \left( \tan{x}\right)$
+                \item $\displaystyle  f(x) = \frac{x}{\sin{x} + \cos{x}} $
+                \item $\displaystyle f(x) = \frac{\sqrt{x}\sin{x}}{\ln{x}} $
+    \end{multicols}
+\end{enumerate}
+
+\end{questions}
+
+\end{document}

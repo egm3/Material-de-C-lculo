@@ -1,0 +1,45 @@
+% Todas as linhas precedidas pelo simbolo '%' são comentários
+% e não afetam em nada o seu texto final.
+
+% IGNORE. Pacotes necessários e acessórios para o documento
+\documentclass[12pt]{exam}
+ \usepackage{graphicx}
+\usepackage{amsthm}
+\usepackage{libertine}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{multicol}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+% ---
+
+% Informações que podem ser configuradas
+% ---
+\newcommand{\class}{Matemática básica} % Nome da disciplina
+\newcommand{\term}{2023}              % Perído Letivo
+\newcommand{\examnum}{Monitoria de cálculo L1A}      % Número/Nome do exercício.
+\newcommand{\examdate}{20/12/2023}        % insere a data no documento
+\newcommand{\timelimit}{}               % IGNORE
+\newcommand{\euler}{e}
+% ---
+
+
+
+\begin{document} % declaração de que o documento começa aqui.
+\pagestyle{plain}
+\thispagestyle{empty}
+% ... formatação do cabeçalho
+\noindent
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} l}
+ \textbf{\class} & \textbf{Monitores:} & \textit{Eduardo Guimarães}\\             % Insira o seu nome dentro dos {}'.
+\textbf{\term} &&\\
+\textbf{\examnum} &&\\
+\textbf{\examdate} &&\\
+\end{tabular*}\\
+\rule[2ex]{\textwidth}{2pt}
+% ---
+
+
+Feita a mão
+\end{document}

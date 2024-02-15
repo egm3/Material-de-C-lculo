@@ -1,0 +1,166 @@
+% Todas as linhas precedidas pelo simbolo '%' são comentários
+% e não afetam em nada o seu texto final.
+
+% IGNORE. Pacotes necessários e acessórios para o documento
+\documentclass[12pt]{exam}
+\usepackage{amsthm}
+\usepackage{libertine}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{multicol}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+% ---
+
+% Informações que podem ser configuradas
+% ---
+\newcommand{\class}{Matemática básica} % Nome da disciplina
+\newcommand{\term}{2023}              % Perído Letivo
+\newcommand{\examnum}{Lista 1 de cálculo L1A}      % Número/Nome do exercício.
+\newcommand{\examdate}{12/11/2023}        % insere a data no documento
+\newcommand{\timelimit}{}               % IGNORE
+\newcommand{\euler}{e}
+% ---
+
+
+
+\begin{document} % declaração de que o documento começa aqui.
+\pagestyle{plain}
+\thispagestyle{empty}
+% ... formatação do cabeçalho
+\noindent
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} l}
+ \textbf{\class} & \textbf{Monitores:} & \textit{Eduardo Guimarães, Diego Dantas e Matheus Lima}\\             % Insira o seu nome dentro dos {}'.
+\textbf{\term} &&\\
+\textbf{\examnum} &&\\
+\textbf{\examdate} &&\\
+\end{tabular*}\\
+\rule[2ex]{\textwidth}{2pt}
+% ---
+
+
+\section{Domínio e Gráfico de Funções}
+
+
+\begin{questions}
+\question Determine o domínio das funções abaixo
+    \begin{multicols}{2}
+        \begin{enumerate}[(a)]
+            \item 
+            $\displaystyle F(x) =  \frac{x}{x^2 + 5x + 6} $
+            \item 
+            $\displaystyle G(x) =  \sqrt[3]{x} \left( 1 + x^3 \right)  $
+            \item 
+            $\displaystyle R(x) =  x^2 + \sqrt{2x -1} $
+            \item 
+            $\displaystyle h(x) =  \frac{\sin{x}}{x + 1}$
+
+        \end{enumerate}
+    \end{multicols}
+    
+    
+
+\question Esboce o gráfico das seguintes funções
+    \begin{multicols}{2}
+        \begin{enumerate}[(a)]
+            \item 
+            $\displaystyle g(x) = \mid x\mid - x$
+            \item 
+            $\displaystyle H(t) = \frac{4 - t^2}{2 - t} $
+            \item 
+            $\displaystyle f(x) = x\sin{\left(x\right)}$
+            \item 
+            $\displaystyle h(x) = \sqrt{\mid x \mid}$
+        \end{enumerate}
+    \end{multicols}
+
+
+\section{Cálculo de limites}
+
+
+
+\question Calcule os seguintes limites:
+    
+    \begin{multicols}{3}
+        \begin{enumerate}[(a)]
+            \item 
+            $\displaystyle \lim_{t\to 0} \frac{\sqrt{1 + t} - \sqrt{1 - t}}{t} $
+            \item 
+            $\displaystyle \lim_{x\to 16} \frac{4 - \sqrt{x} }{16x - x^2} $
+            \item 
+            $\displaystyle  \lim_{t\to 0} \left( \frac{1}{t\sqrt{1 + t}} - \frac{1}{t} \right) $
+            \item 
+            $\displaystyle \lim_{h\to 0} \frac{ \left( x + h\right)^3 - x^3 }{h} $
+            \item 
+            $\displaystyle \lim_{h\to 0} \frac{\sqrt[4]{16 + h} - 2}{h} $
+            \item 
+            $\displaystyle \lim_{x\to \frac{\pi}{4}} \frac{\tan{\left(x\right)} - 1}{x - \frac{\pi}{4}} $
+            \item 
+            $\displaystyle \lim_{t\to 1} \frac{t^4 + t - 2}{t - 1} $
+        \end{enumerate}
+    \end{multicols}
+
+\question Use o Teorema do Confronto para verificar que:
+
+    \begin{multicols}{2}
+        \begin{enumerate}[(a)]
+            \item 
+            $\displaystyle \lim_{x\to 0} x^4 \cos{\left( \frac{2}{x} \right) } = 0 $
+            \item 
+            $\displaystyle \lim_{x\to 0^+} \sqrt{x} \cdot \euler^{\sin{\left( \frac{\pi}{x} \right) }  } = 0 $
+        \end{enumerate}
+    \end{multicols}
+    
+
+\question Considere
+
+\begin{equation}
+    f(x) = \begin{cases}
+        \sqrt{-x} & \text{se    }  x < 0 \\
+        3 - x & \text{se    } 0 \leq x < 3 \\
+        \left( x - 3 \right) ^2 & \text{se  } x > 3
+
+
+
+    \end{cases}
+\end{equation}
+
+\begin{enumerate}[(a)]
+    \item Calcule cada limite, se ele existir.
+    \begin{multicols}{3}
+            \begin{enumerate}[(i)]
+                \item $\displaystyle \lim_{x\to 0^+} f(x) $
+                \item $\displaystyle \lim_{x\to 0^-} f(x) $
+                \item $\displaystyle \lim_{x\to 0} f(x) $
+                \item $\displaystyle \lim_{x\to 3^-} f(x) $
+                \item $\displaystyle \lim_{x\to 3^+} f(x) $
+                \item $\displaystyle \lim_{x\to 3} f(x) $
+            \end{enumerate}
+    \end{multicols}
+    \item Onde f é descontínua?
+    \item Esboce o gráfico de f.
+\end{enumerate}
+
+\question Encontre os pontos nos quais f é descontínua. Em quais desses pontos f é contínua à direita, à esquerda ou em nenhum deles? Esboce o gráfico de f.
+
+\begin{equation}
+    f(x) = \begin{cases}
+        1 + x^2 & \text{se    }  x \leq 0 \\
+        2 - x & \text{se    } 0 < x\leq 2 \\
+        \left( x - 2 \right) ^2 & \text{se  } x > 2
+
+
+
+    \end{cases}
+\end{equation}
+
+
+\end{questions}
+
+
+
+
+
+
+\end{document}
